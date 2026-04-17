@@ -1,0 +1,7 @@
+node_modules
+dist
+.git
+.vscode
+.env
+api/node_modules
+api/.env
