@@ -12,7 +12,7 @@ function Herosection1() {
         <p> Wildlife and Veterinary Services.</p>
       </div>
        <div className='mt-10'>
-            <button className='rounded-4xl px-10 font-semibold  border border-blue-200 absolute bottom-25 md:left-7 left-2 p-2'>Learn More</button>
+            <button className='rounded-4xl px-10 font-semibold  border hover:bg-green-700 border-blue-200 absolute bottom-25 md:left-7 left-2 p-2'>Learn More</button>
         </div>
      
 
