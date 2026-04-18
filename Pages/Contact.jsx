@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import ContactContent from '../Components/ContactContent'
+import LeftContactContent from '../Components/LeftContactContent'
 
 const Contact = () => {
   return (
@@ -8,6 +9,8 @@ const Contact = () => {
 
       <Navbar />
       <ContactContent/>  
+      <LeftContactContent/>
+     
 
     </div>
   )
