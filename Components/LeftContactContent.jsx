@@ -18,7 +18,7 @@ const ContactLeft = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".contact-heading",
-          start: "top 80%",
+          start: "top 70%",
         },
       });
 
@@ -45,9 +45,10 @@ const ContactLeft = () => {
       ref={containerRef}
       className="flex flex-col justify-center min-h-screen px-8 md:px-16 bg-[#f5f1ea]"
     >
-      <h1 className="contact-heading text-5xl md:text-7xl font-serif text-gray-900 leading-tight mb-16">
-        Get in Touch <br /> With Us
-      </h1>
+      <div className="contact-heading text-5xl md:text-7xl font-serif text-gray-900 leading-tight mb-16"><h1>
+        <p className="text-center md:text-start  ">Get in Touch</p> 
+         <p className="text-center md:text-start ">With Us</p>
+      </h1></div>
 
       <div className="space-y-10 text-gray-700">
         <div className="contact-item">

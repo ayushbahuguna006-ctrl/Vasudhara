@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import ContactContent from '../Components/ContactContent'
 import LeftContactContent from '../Components/LeftContactContent'
+import RightContactContext from '../Components/RightContactContext'
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
       <Navbar />
       <ContactContent/>  
       <LeftContactContent/>
-     
+      <RightContactContext/>     
 
     </div>
   )
