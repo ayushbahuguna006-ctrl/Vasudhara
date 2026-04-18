@@ -18,7 +18,6 @@ function Herosection1() {
           trigger: heroRef.current,
           start: 'top top',
           end: 'top -100',
-          scrub: true,
         },
       })
     }, heroRef)
