@@ -6,20 +6,27 @@ const ContactContent = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".contact-tag", {
-        y: 25,
+
+      const tl = gsap.timeline()
+
+    
+      tl.from(".contact-tag", {
+        y: 20,
         opacity: 0,
+        filter: "blur(8px)",
         duration: 0.8,
         ease: "power3.out",
       })
 
-      gsap.from(".contact-text", {
+  
+      tl.from(".contact-text", {
         y: 50,
         opacity: 0,
+        filter: "blur(10px)",
         duration: 1.2,
-        delay: 0.2,
         ease: "power3.out",
-      })
+      }, "-=0.3")
+
     }, sectionRef)
 
     return () => ctx.revert()

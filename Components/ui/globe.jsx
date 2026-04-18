@@ -1,145 +1,80 @@
-import { cn } from "../lib/utils";
+import React from "react";
 
-export const Globe = () => {
+const Globe = () => {
   return (
-    <div
-      className={cn(
-        "relative w-full max-w-5xl mx-auto overflow-hidden rounded-3xl p-8 md:p-12 border backdrop-blur",
-        "bg-white/90 border-neutral-200 text-black",
-        "dark:bg-neutral-900/90 dark:border-neutral-800 dark:text-white"
-      )}
-    >
-      <div className="pointer-events-none absolute -top-32 -right-24 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl dark:bg-cyan-500/20" />
-      <div className="pointer-events-none absolute -bottom-40 -left-32 h-80 w-80 rounded-full bg-indigo-400/10 blur-3xl dark:bg-indigo-600/20" />
+    <>
+      <style>
+        {`
+          @keyframes earthRotate {
+            0% { background-position: 0 0; }
+            100% { background-position: 400px 0; }
+          }
 
-      <div className="relative flex flex-col items-center text-center">
+          @keyframes twinkling {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 1; }
+          }
 
+          @keyframes twinkling-slow {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 1; }
+          }
 
-        
+          @keyframes twinkling-long {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 1; }
+          }
 
-        <div className="mt-10 h-64 w-64 md:h-80 md:w-80 overflow-hidden">
-          <svg
-            viewBox="0 0 300 300"
-            className="h-full w-full"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="rgba(34,211,238,0.9)" />
-                <stop offset="100%" stopColor="rgba(59,130,246,0.1)" />
-              </radialGradient>
+          @keyframes twinkling-fast {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 1; }
+          }
+        `}
+      </style>
 
-              <linearGradient id="trailBright" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.9" />
-                <stop offset="100%" stopColor="#6366f1" stopOpacity="0.3" />
-              </linearGradient>
-
-              <linearGradient id="trailDim" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.4" />
-                <stop offset="100%" stopColor="#6366f1" stopOpacity="0.1" />
-              </linearGradient>
-
-              <linearGradient
-                id="trailBrightLight"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="#0891b2" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#4338ca" stopOpacity="0.6" />
-              </linearGradient>
-
-              <linearGradient
-                id="trailDimLight"
-                x1="0%"
-                y1="100%"
-                x2="100%"
-                y2="0%"
-              >
-                <stop offset="0%" stopColor="#0891b2" stopOpacity="0.6" />
-                <stop offset="100%" stopColor="#4338ca" stopOpacity="0.3" />
-              </linearGradient>
-            </defs>
-
-            <g>
-              {[...Array(6)].map((_, i) => (
-                <ellipse
-                  key={`lat-${i}`}
-                  cx="150"
-                  cy="150"
-                  rx="120"
-                  ry={40 + i * 12}
-                  stroke="url(#trailDim)"
-                  strokeWidth="1.2"
-                  fill="none"
-                  strokeDasharray="5 5"
-                  style={{ animation: "flowAnimation 10s linear infinite" }}
-                  opacity={0.8}
-                  transform="rotate(-25,150,150)"
-                  className="dark:stroke-[url(#trailDim)] stroke-[url(#trailDimLight)]"
-                />
-              ))}
-
-              {[...Array(8)].map((_, i) => (
-                <path
-                  key={`lon-${i}`}
-                  d="M150,30 A120,120 0 0,1 150,270"
-                  stroke="url(#trailDim)"
-                  strokeWidth="1.2"
-                  fill="none"
-                  strokeDasharray="4 4"
-                  style={{ animation: "flowAnimation 12s linear infinite reverse" }}
-                  opacity={0.8}
-                  transform={`rotate(${i * 22.5},150,150)`}
-                  className="dark:stroke-[url(#trailDim)] stroke-[url(#trailDimLight)]"
-                />
-              ))}
-
-              <ellipse
-                cx="150"
-                cy="150"
-                rx="140"
-                ry="60"
-                stroke="url(#trailBright)"
-                strokeWidth="3"
-                fill="none"
-                strokeDasharray="10 10"
-                style={{ animation: "flowAnimation 14s linear infinite" }}
-                opacity="1"
-                transform="rotate(20,150,150)"
-                className="dark:stroke-[url(#trailBright)] stroke-[url(#trailBrightLight)]"
-              />
-
-              <ellipse
-                cx="150"
-                cy="150"
-                rx="130"
-                ry="50"
-                stroke="url(#trailDim)"
-                strokeWidth="2.5"
-                fill="none"
-                strokeDasharray="12 12"
-                style={{ animation: "flowAnimation 9s linear infinite reverse" }}
-                opacity="0.9"
-                transform="rotate(-40,150,150)"
-                className="dark:stroke-[url(#trailDim)] stroke-[url(#trailDimLight)]"
-              />
-            </g>
-          </svg>
+      <div className="flex items-center justify-center h-screen">
+        <div
+          className="relative w-[250px] h-[250px] rounded-full overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.2),-5px_0_8px_#c3f4ff_inset,15px_2px_25px_#000_inset,-24px_-2px_34px_#c3f4ff99_inset,250px_0_44px_#00000066_inset,150px_0_38px_#000000aa_inset]"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=900&q=80')",
+            backgroundSize: "cover",
+            backgroundPosition: "left",
+            animation: "earthRotate 30s linear infinite",
+          }}
+        >
+          <div
+            className="absolute left-[-20px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling 3s infinite" }}
+          />
+          <div
+            className="absolute left-[-40px] top-[30px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling-slow 2s infinite" }}
+          />
+          <div
+            className="absolute left-[350px] top-[90px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling-long 4s infinite" }}
+          />
+          <div
+            className="absolute left-[200px] top-[290px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling 3s infinite" }}
+          />
+          <div
+            className="absolute left-[50px] top-[270px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling-fast 1.5s infinite" }}
+          />
+          <div
+            className="absolute left-[250px] top-[-50px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling-long 4s infinite" }}
+          />
+          <div
+            className="absolute left-[290px] top-[60px] w-1 h-1 bg-white rounded-full"
+            style={{ animation: "twinkling-slow 2s infinite" }}
+          />
         </div>
       </div>
-
-      <style>{`
-        @keyframes flowAnimation {
-          from {
-            stroke-dashoffset: 0;
-          }
-          to {
-            stroke-dashoffset: -100;
-          }
-        }
-      `}</style>
-    </div>
+    </>
   );
 };
+
+export default Globe;
