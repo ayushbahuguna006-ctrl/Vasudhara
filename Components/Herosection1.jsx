@@ -32,7 +32,10 @@ function Herosection1() {
       ref={heroRef}
       className='min-h-screen text-black relative bg-gradient-to-b from-[#d9d5b8] to-white'
     >
-      <Navbar /><MusicButton />
+      <Navbar />
+      <div className='hidden md:block'>
+        <MusicButton/>
+      </div>
 
       <div className='absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
         <p>Vasudhara launches World's</p>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
+import MusicButton from "../Components/Music";
  
 function Navbar() {
   return (
@@ -17,6 +18,9 @@ function Navbar() {
         <NavLink to="/about" className='hidden md:block translate-y-3'>About</NavLink>
 
         <NavLink to="/contact" className='hidden md:block translate-y-3'>Contact Us</NavLink>
+           <div className='md:hidden'>
+               <MusicButton />
+           </div>
 
       </nav>
     </div>
