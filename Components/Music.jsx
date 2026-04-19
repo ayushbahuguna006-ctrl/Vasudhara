@@ -43,7 +43,7 @@ function MusicButton() {
 
       <button
         onClick={toggleMusic}
-        className="fixed md:bottom-6 bottom-3 right-6 z-50 md:w-14 md:h-14 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center shadow-lg hover:scale-105 transition"
+        className="fixed md:bottom-6 bottom-3 right-6 z-50 md:w-14 md:h-14 w-10 h-10 rounded-full bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80  text-white flex items-center justify-center shadow-lg hover:scale-105 transition"
       >
         {isPlaying ? <Volume2 size={22} /> : <VolumeX size={22} />}
       </button>
