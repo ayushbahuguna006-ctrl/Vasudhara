@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Navbar from './Navbar'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import MusicButton from './Music'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,6 +33,9 @@ function Herosection1() {
       className='min-h-screen text-black relative bg-gradient-to-b from-[#d9d5b8] to-white'
     >
       <Navbar />
+      <div className='hidden md:block'>
+        <MusicButton/>
+      </div>
 
       <div className='absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
         <p>Vasudhara launches World's</p>

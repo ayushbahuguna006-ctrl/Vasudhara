@@ -4,6 +4,7 @@ import ContactContent from '../Components/ContactContent'
 import LeftContactContent from '../Components/LeftContactContent'
 import RightContactContext from '../Components/RightContactContext'
 import ContactFAQ from '../Components/ContactFAQ'
+import ContactFooter from '@/ContactFooter'
 
 const Contact = () => {
   return (
@@ -16,6 +17,7 @@ const Contact = () => {
       <RightContactContext />
 </div>   
       <ContactFAQ/>
+      <ContactFooter/>
 
     </div>
   )
