@@ -11,6 +11,8 @@ function Herosection1() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+
+    
       gsap.to('.scroll-indicator', {
         opacity: 0,
         y: 20,
@@ -22,6 +24,15 @@ function Herosection1() {
           scrub: true,
         },
       })
+
+     
+      gsap.from('.hero-text p', {
+        opacity: 0,
+        duration: 1,
+        ease: 'power1.out',
+        delay: 0.3
+      })
+
     }, heroRef)
 
     return () => ctx.revert()
@@ -37,7 +48,7 @@ function Herosection1() {
         <MusicButton/>
       </div>
 
-      <div className='absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
+      <div className='hero-text absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
         <p>Vasudhara launches World's</p>
         <p>1st Global University for</p>
         <p>Wildlife and Veterinary Services.</p>
@@ -54,9 +65,6 @@ function Herosection1() {
         <p className='text-black text-xs mt-2 tracking-[0.3em]'>SCROLL</p>
       </div>
     </div>
-
-
-
   )
 }
 
