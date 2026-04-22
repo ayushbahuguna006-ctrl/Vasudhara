@@ -25,15 +25,15 @@ const AboutCards = () => {
             <div className='sm:w-[48%] lg:w-[23%]  bg-white rounded-xl overflow-hidden flex flex-col'>
                 <img src="/card-3.avif" alt="" className='w-full h-100 object-cover'/>
                 <div className='bg-[#3b1f1f] text-white p-5 flex-grow'>
-                    <p className='text-xs font-bold  mt-6 uppercase'>sterilisation service department</p>
-                    <p className='font-serif lg:text-xl mt-7'>One of the first veterinary care centres in the country to have a CSSD Mega Unit.</p>
+                    <p className='text-xs font-bold  mb-2 uppercase'>sterilisation service department</p>
+                    <p className='font-serif lg:text-xl'>One of the first veterinary care centres in the country to have a CSSD Mega Unit</p>
                 </div>
             </div>
             <div className='sm:w-[48%] lg:w-[23%]  bg-white rounded-xl overflow-hidden flex-col flex'>
                 <img src="/card-4.avif" alt="" className='w-full h-100 object-cover'/>
                 <div className='bg-[#3b1f1f] text-white p-5 flex-grow'>
-                    <p className='text-xs font-bold  mt-6 uppercase'>Animal dentistry </p>
-                    <p className='font-serif lg:text-xl mt-7'>We prioritise animal comfort through, pain-free and stress-free dental procedures.</p>
+                    <p className='text-xs font-bold  mb-2 uppercase'>Animal dentistry </p>
+                    <p className='font-serif lg:text-xl'>We prioritise animal comfort through, pain-free and stress-free dental procedures</p>
                 </div>
             </div>
         </div>

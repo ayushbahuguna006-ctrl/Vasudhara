@@ -35,10 +35,10 @@ function Navbar() {
       </nav>
 
       {open && (
-        <div className='md:hidden mx-2 mt-3 rounded-3xl bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 backdrop-blur-md border border-white/10 text-white shadow-lg px-6 py-5 flex justify-around gap-4'>
-          <div className='flex items-center gap-1'><IoHomeOutline /><NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink></div>
-          <div className='flex items-center gap-1'><RiFileInfoFill /><NavLink to="/about" onClick={() => setOpen(false)}>About</NavLink></div>
-          <div className='flex items-center gap-1'><IoMdContacts /><NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink></div>
+        <div className='md:hidden mx-2 mt-3 rounded-full bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 backdrop-blur-md border border-white/10 text-white shadow-lg px-6 py-5 flex justify-around gap-4'>
+          <div className='flex items-center gap-1'><IoHomeOutline /><NavLink to="/" onClick={() => setOpen(false)}>HOME</NavLink></div>
+          <div className='flex items-center gap-1'><RiFileInfoFill /><NavLink to="/about" onClick={() => setOpen(false)}>ABOUT</NavLink></div>
+          <div className='flex items-center gap-1'><IoMdContacts /><NavLink to="/contact" onClick={() => setOpen(false)}>CONTACT US</NavLink></div>
         </div>
       )}
 
