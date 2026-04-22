@@ -2,9 +2,10 @@ import React from 'react'
 
 const AboutCards = () => {
   return (
+    // Debugging try 1
     <div className='bg-gray-100 py-16 px-10 mt-10'>
         <h1 className='text-xl md:text-5xl font-serif mb-20'>
-            Facilities to Nurture and Care
+            Facilities to Nurture and Care 
         </h1>
         <div className='flex gap-6 flex-wrap'>
             <div className='flex flex-col w-full sm:w-[48%] lg:w-[23%] rounded-xl overflow-hidden bg-[#3b1f1f]'>
