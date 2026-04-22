@@ -4,7 +4,7 @@ import AboutTop1 from '@/AboutTop1'
 
 const About = () => {
   return (
-    <div>
+    <div className='bg-amber-200'>
       <Navbar/>
       <AboutTop1/>
     </div>

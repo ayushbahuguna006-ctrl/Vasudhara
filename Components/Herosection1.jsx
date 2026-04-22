@@ -11,6 +11,8 @@ function Herosection1() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+
+    
       gsap.to('.scroll-indicator', {
         opacity: 0,
         y: 20,
@@ -22,6 +24,15 @@ function Herosection1() {
           scrub: true,
         },
       })
+
+     
+      gsap.from('.hero-text p', {
+        opacity: 0,
+        duration: 1,
+        ease: 'power1.out',
+        delay: 0.3
+      })
+
     }, heroRef)
 
     return () => ctx.revert()
@@ -30,20 +41,20 @@ function Herosection1() {
   return (
     <div
       ref={heroRef}
-      className='min-h-screen text-black relative bg-gradient-to-b from-[#d9d5b8] to-white'
+      className='min-h-screen text-black relative bg-gradient-to-b from-[#d9d5b8]  to-[#76b296]/30'
     >
       <Navbar />
       <div className='hidden md:block'>
         <MusicButton/>
       </div>
 
-      <div className='absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
+      <div className='hero-text absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
         <p>Vasudhara launches World's</p>
         <p>1st Global University for</p>
         <p>Wildlife and Veterinary Services.</p>
       </div>
 
-      <button className='rounded-full px-10 font-semibold border hover:bg-green-700 border-blue-200 absolute bottom-[100px] md:left-7 left-2 p-2'>
+      <button className='rounded-full px-10 font-semibold border hover:bg-green-700 border-black absolute bottom-[100px] md:left-7 left-2 p-2'>
         Learn More
       </button>
 
@@ -54,9 +65,6 @@ function Herosection1() {
         <p className='text-black text-xs mt-2 tracking-[0.3em]'>SCROLL</p>
       </div>
     </div>
-
-
-
   )
 }
 
