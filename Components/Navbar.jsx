@@ -12,8 +12,8 @@ function Navbar() {
 
   return (
     <div className="pt-5  sticky top-0">
-      <nav className='flex  justify-around gap-2 md:gap-10 p-2 font-bold bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 
-      backdrop-blur-md rounded-full md:mx-[20vw] border border-white/10 text-white shadow-lg mx-2'>
+      <nav className='flex  justify-around gap-2 md:gap-10 p-2 font-bold  bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 
+      backdrop-blur-3xl rounded-full md:mx-[20vw] border border-white/10 text-white shadow-lg mx-2'>
  <button className='md:hidden ' onClick={() => setOpen(!open)}>
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>

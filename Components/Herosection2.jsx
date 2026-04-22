@@ -19,7 +19,6 @@ function Herosection2() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 60%",
-          end: "bottom top",
           scrub: 1,
         }
       })
@@ -31,7 +30,7 @@ function Herosection2() {
   return (
     <div
       ref={sectionRef}
-      className="overflow-x-hidden bg-gradient-to-b from-[#76b296]/30 via-[#a1d9be]/40 to-white px-4 md:px-10 py-10"
+      className="overflow-x-hidden  bg-gradient-to-b from-[#76b296]/30 via-[#a1d9be]/40 to-white px-4 md:px-10 py-10"
     >
       <p className="text-2xl md:text-4xl text-black/70 font-semibold text-center md:text-left">
         LATEST NEWS AND UPDATES
