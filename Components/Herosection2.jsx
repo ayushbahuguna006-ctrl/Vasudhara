@@ -18,7 +18,7 @@ function Herosection2() {
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 60%",
+          start: "top 80%",
           scrub: 1,
         }
       })
