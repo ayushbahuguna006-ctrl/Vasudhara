@@ -6,8 +6,7 @@ import AboutCards2 from '@/AboutCards2'
 
 const About = () => {
   return (
-    <div className='-mt-22'>
-      <Navbar/>
+    <div>
       <AboutTop1/>
       <AboutCards2/>
       <AboutCards/>

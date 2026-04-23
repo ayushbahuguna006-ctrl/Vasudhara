@@ -11,7 +11,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="pt-5 z-10 sticky top-0">
+    <div className="pt-5 fixed top-0 left-0 w-full z-[9999]">
       <nav className='flex  justify-around gap-2 md:gap-10 p-2 font-bold  bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 
       backdrop-blur-3xl rounded-full md:mx-[20vw] border border-white/10 text-white shadow-lg mx-2'>
  <button className='md:hidden ' onClick={() => setOpen(!open)}>
@@ -19,18 +19,16 @@ function Navbar() {
           </button>
         <NavLink to="/" className='hidden md:block translate-y-3'>Home</NavLink>
 
-        <div className='flex-col md:justify-start items-start relative right-4 '>
+        <div className='flex-col md:justify-start items-start relative right-12 '>
           <p className='text-center text-2xl'>VΛSUDHΛRΛ</p>
           <p className='text-xs text-center'>Every life matters</p>
         </div>
 
-        <NavLink to="/about" className='hidden md:block translate-y-3'>About</NavLink>
+        <NavLink to="/about" className='hidden md:block translate-y-3 cursor-pointer'>About</NavLink>
 
         <NavLink to="/contact" className='hidden md:block translate-y-3'>Contact Us</NavLink>
 
-        <div className='md:hidden flex items-center gap-3'>
-          <MusicButton />
-        </div>
+        
 
       </nav>
 

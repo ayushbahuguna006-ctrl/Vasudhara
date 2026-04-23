@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import Navbar from './Navbar'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import MusicButton from './Music'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,7 +10,6 @@ function Herosection1() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-
       gsap.to('.scroll-indicator', {
         opacity: 0,
         y: 20,
@@ -30,7 +28,6 @@ function Herosection1() {
         ease: 'power1.out',
         delay: 0.3
       })
-
     }, heroRef)
 
     return () => ctx.revert()
@@ -41,7 +38,6 @@ function Herosection1() {
       ref={heroRef}
       className='relative min-h-screen overflow-hidden text-white'
     >
-
       <video
         autoPlay
         loop
@@ -52,16 +48,10 @@ function Herosection1() {
         <source src='/herovideo.mp4' type='video/mp4' />
       </video>
 
-    
       <div className='absolute inset-0 bg-black/30 z-10'></div>
 
-    
       <div className='relative z-20 min-h-screen'>
-        <Navbar />
-
-        <div className='hidden md:block'>
-          <MusicButton />
-        </div>
+        
 
         <div className='hero-text absolute bottom-40 md:left-8 left-2 font-bold text-2xl md:text-5xl'>
           <p>Vasudhara launches World's</p>

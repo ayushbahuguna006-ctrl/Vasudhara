@@ -4,6 +4,7 @@ import Contact from '../Pages/Contact'
 import About from '../Pages/About'
 import SmoothScroll from '../Components/SmoothScroll'
 import ScrollToTop from "../Components/ScrollToTop";
+import Navbar from "../Components/Navbar";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -11,8 +12,8 @@ function App() {
   return (
     <div className='bg-white'>
       <BrowserRouter>
-
         <ScrollToTop />
+        <Navbar />
 
         <SmoothScroll>
           <Routes>
@@ -21,7 +22,6 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </SmoothScroll>
-
       </BrowserRouter>
     </div>
   )

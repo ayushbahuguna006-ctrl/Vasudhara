@@ -39,13 +39,35 @@ function MusicButton() {
 
   return (
     <>
-      <audio ref={audioRef} src="/music.mp3" loop />
+      <audio
+        ref={audioRef}
+        src="/music.mp3"
+        loop
+        preload="auto"
+      />
 
       <button
         onClick={toggleMusic}
-        className="fixed md:bottom-6 bottom-3 right-6 z-50 md:w-14 md:h-14 w-10 h-10 rounded-full bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80  text-white flex items-center justify-center shadow-lg hover:scale-105 transition"
+        className="
+          fixed z-50
+          md:bottom-6 md:right-6
+          top-8 right-8 md:top-auto
+          md:w-14 md:h-14
+          w-10 h-10
+          rounded-full
+          bg-gradient-to-r
+          from-[#1a1a1a]/80
+          via-[#2a2a2a]/70
+          to-[#1a1a1a]/80
+          text-white
+          flex items-center justify-center
+          shadow-lg
+          hover:scale-105
+          transition
+          backdrop-blur-md
+        "
       >
-        {isPlaying ? <Volume2 size={22} /> : <VolumeX size={22} />}
+        {isPlaying ? <Volume2 size={20} /> : <VolumeX size={20} />}
       </button>
     </>
   );
