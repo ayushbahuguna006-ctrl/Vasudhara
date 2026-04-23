@@ -12,19 +12,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className='bg-white'>
-     <BrowserRouter>
-  <ScrollToTop />
-  <Navbar />
-  <MusicButton />
+      <BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <MusicButton />
 
-  <SmoothScroll>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  </SmoothScroll>
-</BrowserRouter>
+        <SmoothScroll>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </SmoothScroll>
+      </BrowserRouter>
     </div>
   )
 }
