@@ -3,7 +3,6 @@ import React from 'react'
 const AboutTop1 = () => {
   return (
     <div className='relative h-screen'>
-      <Navbar/>
       <img src="/about-bg-01.jpg" alt="" className="w-full h-full object-cover absolute"/>
       <div className=' w-full h-full bg-black opacity-40 absolute '></div> 
       <div className='text-white flex flex-col justify-center px-10 relative'>
