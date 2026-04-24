@@ -27,9 +27,9 @@ function Herosection4() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-white via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
+    <section className="relative  bg-gradient-to-b from-[#e8dccb] via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
       <div className="max-w-7xl  px-4 md:px-13">
-        <div className="mb-12">
+        <div className="mb-12 translate-y-10">
           <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
             OUR WORK
           </p>

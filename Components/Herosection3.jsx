@@ -27,7 +27,7 @@ function Herosection3() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-white via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-white via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
       <div className="max-w-7xl  px-4 md:px-13">
         <div className="mb-12">
           <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
@@ -108,7 +108,7 @@ function Herosection3() {
                   Vantara
                 </p>
                 <h3 className="text-2xl md:text-4xl font-semibold mt-2">
-                  Planting lives with care.
+                  Planting lives with care
                 </h3>
               </div>
             </div>
