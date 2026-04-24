@@ -6,7 +6,7 @@ function Herosection2() {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const amount = 345
+      const amount = 342
 
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -amount : amount,
@@ -24,7 +24,7 @@ function Herosection2() {
           LATEST NEWS AND HIGHLIGHTS
         </p>
 
-        <div className="flex gap-3 pl-27 md:pl-0 translate-y-7">
+        <div className="flex gap-3 pl-27 md:pl-0 translate-y-7 md:translate-y-0">
           <button
             onClick={() => scroll('left')}
             className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
@@ -47,7 +47,7 @@ function Herosection2() {
       >
         <div className="flex gap-6 w-max">
 
-          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
+          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 shadow shrink-0">
             <p className="text-sm text-black/50">1 May 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
               <img
@@ -65,7 +65,7 @@ function Herosection2() {
             </div>
           </div>
 
-          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
+          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 shadow shrink-0">
             <p className="text-sm text-black/50">5 March 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
               <img
@@ -83,7 +83,7 @@ function Herosection2() {
             </div>
           </div>
 
-          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
+          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 shadow shrink-0">
             <p className="text-sm text-black/50">1 May 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
               <img
@@ -101,7 +101,7 @@ function Herosection2() {
             </div>
           </div>
 
-          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
+          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 shadow shrink-0">
             <p className="text-sm text-black/50">5 March 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
               <img
