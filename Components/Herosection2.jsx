@@ -16,11 +16,11 @@ function Herosection2() {
   }
 
   return (
-    <div className="overflow-x-hidden bg-white px-4 md:px-15 py-20">
+    <div className="overflow-x-hidden bg-white px-4 md:px-15 py-10">
       <p className='text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-0.5'>UPDATES</p>
 
       <div className="flex justify-between items-center md:mt-4">
-        <p className="text-xl md:text-4xl text-[#26351f]/50 font-semibold pl-5 md:pl-0 md:text-center md:text-left">
+        <p className="text-xl md:text-4xl text-[#26351f]/50 font-semibold pl-5 mt-3 md:mt-0 md:pl-0 md:text-center md:text-left">
           LATEST NEWS AND HIGHLIGHTS
         </p>
 
