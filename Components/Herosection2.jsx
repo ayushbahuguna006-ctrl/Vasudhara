@@ -16,7 +16,7 @@ function Herosection2() {
   }
 
   return (
-    <div className="overflow-x-hidden bg-white px-4 md:px-15 py-10">
+    <div className="overflow-x-hidden bg-white px-4 md:px-15 py-20">
       <p className='text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-0.5'>UPDATES</p>
 
       <div className="flex justify-between items-center md:mt-4">
