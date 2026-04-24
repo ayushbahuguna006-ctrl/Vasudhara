@@ -27,8 +27,8 @@ function Herosection4() {
   ];
 
   return (
-    <section className="relative  bg-gradient-to-b from-[#e8dccb] via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
-      <div className="max-w-7xl  px-4 md:px-13">
+    <section className="relative bg-gradient-to-b from-[#e8dccb] via-[#f7f2ea] to-[#e8dccb] -translate-y-10 overflow-hidden">
+      <div className="max-w-7xl px-4 md:px-13">
         <div className="mb-12 translate-y-10">
           <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
             OUR WORK
@@ -39,8 +39,8 @@ function Herosection4() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div className="flex flex-col gap-4">
+        <div className="grid md:grid-cols-2 gap-10 items-start ">
+          <div className="flex flex-col gap-4 md:order-2 md:translate-x-40">
             {initiatives.map((item, index) => (
               <div
                 key={index}
@@ -90,15 +90,15 @@ function Herosection4() {
             ))}
           </div>
 
-          <div className="relative">
+          <div className="relative md:order-1">
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#b9a176]/30 rounded-full blur-2xl" />
             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-[#26351f]/20 rounded-full blur-3xl" />
 
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border md:translate-x-40 md:translate-y-4 border-white/60">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border md:translate-x-10 md:translate-y-4 border-white/60">
               <img
                 src="/tree2.jpg"
                 alt="Wildlife conservation"
-                className="w-full h-[55vh] md:h-[80vh] object-cover -mt-17 "
+                className="w-full h-[55vh] md:h-[80vh] object-cover -mt-17"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
