@@ -1,79 +1,122 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function Herosection3() {
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(0);
 
   const initiatives = [
     {
-      title: 'RESCUE AND RECOVERY',
+      title: "RESCUE AND RECOVERY",
       description:
-        'At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion. Our teams minimise stress, provide immediate veterinary support, and ensure a safe, stabilised transition into structured recovery, whether animals arrive from within India or internationally.',
+        "At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion.",
     },
     {
-      title: 'TREATMENT AND CARE',
+      title: "TREATMENT AND CARE",
       description:
-        'At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion. Our teams minimise stress, provide immediate veterinary support, and ensure a safe, stabilised transition into structured recovery, whether animals arrive from within India or internationally.',
+        "Our veterinary teams provide specialised treatment, nutrition, monitoring, and long-term medical support to help every rescued animal recover safely.",
     },
     {
-      title: 'REHABILITATION AND SUPPORT',
+      title: "REHABILITATION AND SUPPORT",
       description:
-        'At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion. Our teams minimise stress, provide immediate veterinary support, and ensure a safe, stabilised transition into structured recovery, whether animals arrive from within India or internationally.',
+        "We create structured recovery environments where animals receive behavioural support, habitat care, and continuous supervision.",
     },
     {
-      title: 'CONSERVATION, BREEDING AND REBUILDING',
+      title: "CONSERVATION, BREEDING AND REBUILDING",
       description:
-        'At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion. Our teams minimise stress, provide immediate veterinary support, and ensure a safe, stabilised transition into structured recovery, whether animals arrive from within India or internationally.',
+        "Through conservation breeding, research, and habitat-focused support, we help rebuild vulnerable wildlife populations for the future.",
     },
-  ]
+  ];
 
   return (
-    <>
-      <div className='min-h-screen bg-white py-10 overflow-hidden'>
-        <p className='font-semibold text-2xl md:text-4xl text-center md:text-start md:pl-16.5 text-black/70 '>
-          CORE INITIATIVES
-        </p>
+    <section className="min-h-screen bg-gradient-to-b from-white via-[#f7f2ea] to-[#e8dccb] py-14 overflow-hidden">
+      <div className="max-w-7xl  px-4 md:px-10">
+        <div className="mb-12">
+          <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
+            OUR WORK
+          </p>
 
-        <div className='flex md:flex-row flex-col justify-between items-start pt-10'>
-          <div className='md:w-[45vw] w-full flex flex-col gap-4 px-3 md:px-0 md:pl-11'>
+          <h2 className="mt-3 text-4xl md:text-6xl font-semibold pl-2 text-[#26351f]/50 text-center md:text-start leading-tight">
+            Core Initiatives
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="flex flex-col gap-4">
             {initiatives.map((item, index) => (
               <div
                 key={index}
                 onClick={() => setActive(index)}
-                className={`rounded-3xl p-6  cursor-pointer transition-all ease-in duration-200 ${
+                className={`group rounded-[2rem] cursor-pointer transition-all duration-300 border ${
                   active === index
-                    ? 'bg-[#ddd0bc] border border-[#cdbfa9] shadow-sm'
-                    : 'bg-transparent'
+                    ? "bg-[#d9c7ab] border-[#c2aa86] shadow-xl shadow-black/10 scale-[1.02]"
+                    : "bg-white/60 border-[#dfd2bd] hover:bg-[#efe4d2] hover:shadow-md"
                 }`}
               >
-                <p className={`md:text-lg text-base text-black font-medium text-center md:text-start hover:rounded-lg ${
-                  active === index
-                    ? 'hover:bg-transparent px-10 hover:transition-all hover:ease-in'
-                    : "hover:bg-[#ddd0bc] hover:px-10  hover:transition-all hover:ease-in"
-                }`}>
-                  {item.title} ▼
-                </p>
+                <div className="p-6 md:p-7">
+                  <div className="flex items-center justify-between gap-5">
+                    <p
+                      className={`text-base md:text-lg font-semibold tracking-wide transition-colors ${
+                        active === index
+                          ? "text-[#26351f]"
+                          : "text-[#4c4438]"
+                      }`}
+                    >
+                      {item.title}
+                    </p>
 
-                {active === index && (
-                  <p className='text-[#5f564b] leading-8 pt-5 text-center md:text-start'>
-                    {item.description}
-                  </p>
-                )}
+                    <span
+                      className={`min-w-9 h-9 rounded-full flex items-center justify-center text-lg transition-all duration-300 ${
+                        active === index
+                          ? "bg-[#26351f] text-white rotate-180"
+                          : "bg-[#ddd0bc] text-[#26351f] group-hover:bg-[#26351f] group-hover:text-white"
+                      }`}
+                    >
+                      ↓
+                    </span>
+                  </div>
+
+                  <div
+                    className={`grid transition-all duration-300 ${
+                      active === index
+                        ? "grid-rows-[1fr] opacity-100 mt-5"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <p className="overflow-hidden text-[#5f564b] leading-8 text-sm md:text-base">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
 
-          <div className='md:w-[48vw] w-full mt-10 md:mt-0 px-3 md:px-5'>
-            <img
-              src='/tree2.jpg'
-              className='w-full md:h-[90vh] object-cover rounded-[2rem] md:-translate-y-20'
-            />
+          <div className="relative">
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#b9a176]/30 rounded-full blur-2xl" />
+            <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-[#26351f]/20 rounded-full blur-3xl" />
+
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border border-white/60">
+              <img
+                src="/tree2.jpg"
+                alt="Wildlife conservation"
+                className="w-full h-[55vh] md:h-[82vh] object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
+
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <p className="text-sm tracking-[0.25em] uppercase text-white/80">
+                  Vantara
+                </p>
+                <h3 className="text-2xl md:text-4xl font-semibold mt-2">
+                  Protecting wildlife with care.
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </>
-  )
+    </section>
+  );
 }
 
-export default Herosection3
-
-// md:text-lg text-base text-black font-medium text-center md:text-start hover:bg-amber-800/10 hover:rounded-xl
+export default Herosection3;

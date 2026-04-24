@@ -32,8 +32,8 @@ function Herosection2() {
       ref={sectionRef}
       className="overflow-x-hidden  bg-white px-4 md:px-15 py-10"
     >
-      <p className="text-2xl md:text-4xl text-black/70 font-semibold text-center md:text-left">
-        LATEST NEWS 
+      <p className="text-xl md:text-4xl text-[#26351f]/50 font-semibold text-start md:text-center md:text-left">
+        LATEST NEWS AND HIGHLIGHTS
       </p>
 
       <div className="overflow-hidden mt-10">
