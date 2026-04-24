@@ -47,7 +47,7 @@ function Herosection2() {
       >
         <div className="flex gap-6 w-max">
 
-          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 shadow shrink-0">
+          <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/50 hover:border   shadow shrink-0">
             <p className="text-sm text-black/50">1 May 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
               <img
