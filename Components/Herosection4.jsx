@@ -31,11 +31,11 @@ function Herosection4() {
       <div className="max-w-7xl px-4 md:px-13">
         <div className="mb-12 translate-y-10">
           <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
-            OUR WORK
+            OUR CORE
           </p>
 
           <h2 className="mt-3 text-4xl md:text-6xl font-semibold pl-2 text-[#26351f]/50 text-center md:text-start leading-tight">
-            Core Initiatives
+            Core Missions
           </h2>
         </div>
 
@@ -96,7 +96,7 @@ function Herosection4() {
 
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border md:translate-x-2 md:translate-y-4 border-white/60">
               <img
-                src="/tree3.jpg"
+                src="/tree2.jpg"
                 alt="Wildlife conservation"
                 className="w-full h-[55vh] md:h-[80vh] object-cover -mt-17"
               />
