@@ -1,48 +1,59 @@
-import React, { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
+import React, { useRef } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 function Herosection2() {
-  const sectionRef = useRef(null)
   const scrollRef = useRef(null)
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const el = scrollRef.current
-      const totalWidth = el.scrollWidth - window.innerWidth
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const amount = 420
 
-      gsap.to(el, {
-        x: -totalWidth,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          scrub: 1,
-        }
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -amount : amount,
+        behavior: 'smooth',
       })
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
+    }
+  }
 
   return (
-    <div
-      ref={sectionRef}
-      className="overflow-x-hidden  bg-white px-4 md:px-15 py-10"
-    >
-      <p className="text-xl md:text-4xl text-[#26351f]/50 font-semibold text-start md:text-center md:text-left">
-        LATEST NEWS AND HIGHLIGHTS
-      </p>
+    <div className="overflow-x-hidden bg-white px-4 md:px-15 py-10">
+      <p className='text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-0.5'>UPDATES</p>
 
-      <div className="overflow-hidden mt-10">
-        <div ref={scrollRef} className="flex gap-6 w-max">
+      <div className="flex justify-between items-center md:mt-4">
+        <p className="text-xl md:text-4xl text-[#26351f]/50 font-semibold pl-5 md:pl-0 md:text-center md:text-left">
+          LATEST NEWS AND HIGHLIGHTS
+        </p>
+
+        <div className="hidden md:flex gap-3">
+          <button
+            onClick={() => scroll('left')}
+            className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
+          >
+            <ChevronLeft size={22} />
+          </button>
+
+          <button
+            onClick={() => scroll('right')}
+            className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300"
+          >
+            <ChevronRight size={22} />
+          </button>
+        </div>
+      </div>
+
+      <div
+        ref={scrollRef}
+        className="overflow-hidden mt-10"
+      >
+        <div className="flex gap-6 w-max">
 
           <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
             <p className="text-sm text-black/50">1 May 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
-              <img src="/website-icon.jpg" className="w-20 h-20 rounded-lg object-cover" />
+              <img
+                src="/website-icon.jpg"
+                className="w-20 h-20 rounded-lg object-cover"
+              />
               <div>
                 <p className="font-medium text-black/80">
                   Vasudhara launches its website.
@@ -57,7 +68,10 @@ function Herosection2() {
           <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
             <p className="text-sm text-black/50">5 March 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
-              <img src="/tree.jpg" className="w-20 h-20 rounded-lg object-cover" />
+              <img
+                src="/tree.jpg"
+                className="w-20 h-20 rounded-lg object-cover"
+              />
               <div>
                 <p className="font-medium text-black/80">
                   Vasudhara plants its first tree.
@@ -72,7 +86,10 @@ function Herosection2() {
           <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
             <p className="text-sm text-black/50">1 May 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
-              <img src="/website-icon.jpg" className="w-20 h-20 rounded-lg object-cover" />
+              <img
+                src="/website-icon.jpg"
+                className="w-20 h-20 rounded-lg object-cover"
+              />
               <div>
                 <p className="font-medium text-black/80">
                   Vasudhara launches its website.
@@ -87,7 +104,10 @@ function Herosection2() {
           <div className="w-[320px] md:w-[400px] p-5 bg-white/30 backdrop-blur-md rounded-xl border border-black/10 shadow shrink-0">
             <p className="text-sm text-black/50">5 March 2026 →</p>
             <div className="flex gap-4 mt-4 items-center">
-              <img src="/tree.jpg" className="w-20 h-20 rounded-lg object-cover" />
+              <img
+                src="/tree.jpg"
+                className="w-20 h-20 rounded-lg object-cover"
+              />
               <div>
                 <p className="font-medium text-black/80">
                   Vasudhara plants its first tree.
