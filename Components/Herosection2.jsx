@@ -20,11 +20,11 @@ function Herosection2() {
       <p className='text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-0.5'>UPDATES</p>
 
       <div className="flex flex-col md:flex-row md:justify-between md:items-center md:mt-4 gap-4">
-        <p className="text-xl md:text-4xl text-[#26351f] font-semibold pl-5 mt-3 md:mt-0 md:pl-0 md:text-center md:text-left">
+        <p className="text-xl md:text-4xl text-[#26351f] font-semibold pl-8 mt-3 md:mt-0 md:pl-0 md:text-center md:text-left">
           LATEST NEWS AND HIGHLIGHTS
         </p>
 
-        <div className="flex gap-3 pl-27 md:pl-0 translate-y-7 md:translate-y-0">
+        <div className="flex gap-3 pl-29 md:pl-0 translate-y-7 md:translate-y-0">
           <button
             onClick={() => scroll('left')}
             className="w-12 h-12 rounded-full bg-green-800 text-white border border-black/10 flex items-center justify-center hover:bg-black/80 hover:text-white transition-all duration-300"

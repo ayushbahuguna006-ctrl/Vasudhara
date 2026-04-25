@@ -27,8 +27,8 @@ const AboutForm = () => {
           <p className="uppercase text-sm tracking-widest font-semibold text-gray-500 mb-2">
             For General Queries
           </p>
-          <p className="text-2xl font-serif">Contact@Vasudhara.in</p>
-          <p className="text-2xl font-serif">+91 90160 12345</p>
+          <p className="text-xl md:text-2xl font-serif">Contact@Vasudhara.in</p>
+          <p className="text-xl md:text-2xl font-serif">+91 90160 12345</p>
         </div>
 
         <div className="contact-item">

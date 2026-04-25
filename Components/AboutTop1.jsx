@@ -58,7 +58,7 @@ const AboutTop1 = () => {
         <button className='rounded-full px-10 font-semibold border hover:bg-green-700 border-white absolute bottom-[170px] md:left-7 left-2 p-2'>
           Learn More
         </button>
-        <div className='scroll-indicator absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center'>
+        <div className='scroll-indicator absolute bottom-20 md:top-10 left-1/2 -translate-x-1/2 flex flex-col items-center'>
           <div className='w-6 h-10 border-2 border-white rounded-full flex justify-center pt-2'>
             <div className='w-1 h-2 bg-white rounded-full scroll-dot'></div>
           </div>
