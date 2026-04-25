@@ -105,7 +105,7 @@ function Herosection3() {
 
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <p className="text-sm tracking-[0.25em] uppercase text-white/80">
-                  Vantara
+                  Vasudhara
                 </p>
                 <h3 className="text-2xl md:text-4xl font-semibold mt-2">
                   Planting lives with care
