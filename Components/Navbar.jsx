@@ -19,7 +19,7 @@ function Navbar() {
           </button>
         <NavLink to="/" className='hidden md:block translate-y-3'>Home</NavLink>
 
-        <div className='flex-col md:justify-start items-start relative right-12 '>
+        <div className='flex-col md:justify-start items-start relative right-14 '>
           <p className='text-center text-2xl'>VΛSUDHΛRΛ</p>
           <p className='text-xs text-center'>Every life matters</p>
         </div>
