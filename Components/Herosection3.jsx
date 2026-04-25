@@ -29,7 +29,7 @@ function Herosection3() {
   return (
     <section className="relative bg-white -translate-y-10 overflow-hidden">
       <div className="max-w-7xl  px-4 md:px-13">
-        <div className="mb-12">
+        <div className="mb-12 translate-y-5">
           <p className="text-sm tracking-[0.35em] text-[#8a765d] font-semibold text-center md:text-start md:pl-4">
             OUR WORK
           </p>
@@ -94,7 +94,7 @@ function Herosection3() {
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#b9a176]/30 rounded-full blur-2xl" />
             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-[#26351f]/20 rounded-full blur-3xl" />
 
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border md:translate-x-40 md:translate-y-4 border-white/60">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-black/20 border -translate-y-4 md:translate-x-40 md:translate-y-4 border-white/60">
               <img
                 src="/tree3.jpg"
                 alt="Wildlife conservation"
