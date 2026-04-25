@@ -35,7 +35,17 @@ const AboutTop1 = () => {
     <div 
     ref={heroRef}
     className='relative min-h-screen overflow-hidden text-white'>
-      <img src="/about-bg-2.jpg" alt="" className="w-full h-full object-cover absolute"/>
+       <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className='absolute top-0 left-0 w-full h-full object-cover'
+      >
+        <source src='/about-vd.mp4' type='video/mp4' />
+      </video>
+
+      <div className='absolute inset-0 bg-black/30 z-10'></div>
       <div className='relative z-20 min-h-screen'>
         
 
