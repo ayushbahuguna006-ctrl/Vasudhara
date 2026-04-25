@@ -24,7 +24,7 @@ function Herosection2() {
           LATEST NEWS AND HIGHLIGHTS
         </p>
 
-        <div className="flex gap-3 pl-41 md:pl-0 translate-y-7 md:translate-y-0">
+        <div className="flex gap-3 pl-43 md:pl-0 translate-y-7 md:translate-y-0">
           <button
             onClick={() => scroll('left')}
             className="w-12 h-12 rounded-full bg-green-800 text-white border border-black/10 flex items-center justify-center hover:bg-black/80 hover:text-white transition-all duration-300"
