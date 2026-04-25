@@ -14,7 +14,7 @@ function Navbar() {
     <div className="pt-5 fixed top-0 left-0 w-full z-[9999]">
       <nav className='flex  justify-around gap-2 md:gap-10 p-2 font-bold  bg-gradient-to-r from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 
       backdrop-blur-3xl rounded-full md:mx-[20vw] border border-white/10 text-white shadow-lg mx-2'>
- <button className='md:hidden ' onClick={() => setOpen(!open)}>
+ <button className='md:hidden relative right-5 ' onClick={() => setOpen(!open)}>
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         <NavLink to="/" className='hidden md:block translate-y-3'>Home</NavLink>
