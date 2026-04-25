@@ -8,7 +8,7 @@ function ContactfromHome() {
       
      
       <h1 className="text-[#f3efe4] text-5xl md:text-7xl lg:text-8xl font-serif leading-none mb-8 md:mb-14">
-        Get in Touch.
+        Get in Touch
       </h1>
 
     
