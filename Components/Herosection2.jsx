@@ -124,6 +124,7 @@ function Herosection2() {
 
       <hr className="mt-10 opacity-30" />
     </div>
+    
   )
 }
 
