@@ -5,22 +5,22 @@ function Herosection3() {
 
   const initiatives = [
     {
-      title: "RESCUE AND RECOVERY",
+      title: "Rescue and recovery",
       description:
         "At Vantara, rescue is the foundation of animal care. We locate and secure wildlife impacted by habitat loss, conflict, or confinement, conducting every operation with precision and compassion.",
     },
     {
-      title: "TREATMENT AND CARE",
+      title: "Treatment and Care",
       description:
         "Our veterinary teams provide specialised treatment, nutrition, monitoring, and long-term medical support to help every rescued animal recover safely.",
     },
     {
-      title: "REHABILITATION AND SUPPORT",
+      title: "Rehabilitation and Support",
       description:
         "We create structured recovery environments where animals receive behavioural support, habitat care, and continuous supervision.",
     },
     {
-      title: "CONSERVATION, BREEDING AND REBUILDING",
+      title: "Conservation, Breeding AND Rebuilding",
       description:
         "Through conservation breeding, research, and habitat-focused support, we help rebuild vulnerable wildlife populations for the future.",
     },
@@ -54,7 +54,7 @@ function Herosection3() {
                 <div className="p-6 md:p-7">
                   <div className="flex items-center justify-between gap-5">
                     <p
-                      className={`text-base md:text-lg font-semibold tracking-wide transition-colors ${
+                      className={`text-base md:text-2xl font-light tracking-wide transition-colors ${
                         active === index
                           ? "text-[#26351f]"
                           : "text-[#4c4438]"
@@ -107,7 +107,7 @@ function Herosection3() {
                 <p className="text-sm tracking-[0.25em] uppercase text-white/80">
                   Vasudhara
                 </p>
-                <h3 className="text-2xl md:text-4xl font-semibold mt-2">
+                <h3 className="text-2xl md:text-4xl text-white/80 font-semibold mt-2">
                   Planting lives with care
                 </h3>
               </div>

@@ -39,7 +39,7 @@ function Herosection4() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start ">
+        <div className="grid md:grid-cols-2 gap-10 translate-y-10 items-start ">
           <div className="flex flex-col gap-4 md:order-2 md:translate-x-40">
             {initiatives.map((item, index) => (
               <div
@@ -54,7 +54,7 @@ function Herosection4() {
                 <div className="p-6 md:p-7">
                   <div className="flex items-center justify-between gap-5">
                     <p
-                      className={`text-base md:text-xl font-medium tracking-wide transition-colors ${
+                      className={`text-base md:text-2xl font-light tracking-wide transition-colors ${
                         active === index
                           ? "text-[#26351f]"
                           : "text-[#4c4438]"
@@ -107,8 +107,8 @@ function Herosection4() {
                 <p className="text-sm tracking-[0.25em] uppercase text-white/80">
                   Vasudhara
                 </p>
-                <h3 className="text-2xl md:text-4xl font-semibold mt-2">
-                  Planting lives with care.
+                <h3 className="text-2xl md:text-4xl text-white/90 font-semibold mt-2">
+                  Nurturing Biodiversity
                 </h3>
               </div>
             </div>
