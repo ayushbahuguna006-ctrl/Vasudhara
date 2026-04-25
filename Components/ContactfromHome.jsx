@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 function ContactfromHome() {
   return (
     
-      <section className="bg-[#032b24] px-4 md:px-8 lg:px-10 py-12  md:py-20 overflow-hidden">
+      <section className="bg-[#032b24] px-4 md:px-8 lg:px-10 py-12 translate-y-10  md:py-20 overflow-hidden">
       
      
       <h1 className="text-[#f3efe4] text-5xl md:text-7xl lg:text-8xl text-center  font-serif leading-none mb-8 md:mb-14">
