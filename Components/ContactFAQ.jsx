@@ -69,7 +69,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="bg-[#e9e4d9] min-h-screen px-6">
+    <div ref={containerRef} className="bg-[#e9e4d9] min-h-screen px-6 md:pt-0 ">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-5xl md:text-6xl font-serif text-center mb-16">
           Frequently Asked Questions
