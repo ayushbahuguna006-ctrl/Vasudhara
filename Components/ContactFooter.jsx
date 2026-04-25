@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactFooter = () => {
   return (
-    <footer className=' bg-green-900 px-6 py-8 md:py-12 text-white'>
+    <footer className=' bg-green-900 px-6 translate-y-5 py-8 md:py-12 text-white'>
         <div className='flex flex-col items-center max-w-7xl mx-auto md:flex-row justify-between gap-4'>
             <div className='flex flex-col items-center gap-8'>
                 <div className='flex items-center gap-6 lg:gap-15'>
