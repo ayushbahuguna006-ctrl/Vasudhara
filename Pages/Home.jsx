@@ -3,6 +3,7 @@ import Herosection1 from '../Components/Herosection1'
 import Herosection2 from '../Components/Herosection2'
 import Herosection3 from '../Components/Herosection3'
 import Herosection4 from '@/Herosection4'
+import ContactfromHome from '@/ContactfromHome'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Herosection2 />
       <Herosection3 />
       <Herosection4/>
-
+      <ContactfromHome/>
+      
     </div>
       
     </>
