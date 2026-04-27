@@ -10,6 +10,7 @@ import HomeFooter from '@/HomeFooter'
 function App() {
   return (
     <>
+    {/* //home section completed */}
     <div className='-mt-0'>
       <Herosection1 />
       <Herosection2 />
