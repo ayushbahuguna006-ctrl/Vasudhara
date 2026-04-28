@@ -8,6 +8,7 @@ import AboutFooter from '@/AboutFooter'
 
 const About = () => {
   return (
+    // About section completed
     <div>
       <AboutTop1/>
       <AboutCards2/>
