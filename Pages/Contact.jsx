@@ -8,6 +8,7 @@ import ContactFooter from '@/ContactFooter'
 
 const Contact = () => {
   return (
+    //contact section completed
     <div className='min-h-screen bg-gradient-to-b from-[#f5f2ed] via-[#e9e4d9] to-[#dcd6c8]'>
       <ContactContent/>  
       <div className="max-w-full mx-auto grid md:grid-cols-2 gap-20 justify-between items-start px-6 md:px-10 py-16">
