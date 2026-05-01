@@ -10,7 +10,7 @@ import HomeFooter from '@/HomeFooter'
 function App() {
   return (
     <>
-    {/* pages section completed */}
+    {/* pages section complete */}
     {/* //home section completed */}
     <div className='-mt-0'>
       <Herosection1 />
